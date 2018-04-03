@@ -1,0 +1,43 @@
+nav a{
+   font-size: 1.3em !important;
+}
+
+
+header {
+  background-color: #343a40;
+  border-bottom: #86c232 3px solid;
+}
+
+section{
+  background: url(../images/forest.jpg) no-repeat;
+}
+
+footer {
+    color: white;
+    background-color: #343a40;
+    border-top: #86c232 3px solid;
+}
+
+section .view {
+  background-color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+h1 {
+  font-family: 'Audiowide', cursive;
+}
+
+div {
+  font-family: 'Share', cursive;
+}
+
+article{
+  background-color: #333;
+}
