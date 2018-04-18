@@ -2,14 +2,15 @@
 <html>
   <head>
     <title>Toolsie Persaud Ltd. : Guyana</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style5.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
     <script src="../js/jquery.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/gallery.js"></script>
+    <script src="../js/modal.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -57,7 +58,7 @@
     </nav>
 </div>
 </header>
-
+<main>
   <div class="jumbotron">
     <h1 class="display-4"><center>Timber Products and Services Available</center></h1>
   </div>
@@ -69,7 +70,7 @@
                 <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title">Baromalli</h5>
-                        <p class="card-text"><img src="../images/samples/baromalli.gif"</p>
+                        <p class="card-text"><img id="myImg" src="../images/samples/baromalli.gif" alt="Baromalli"</p>
                         <a class="btn btn-success" data-toggle="collapse" href="#collapse" role="button">More Details</a>
                         <div class="collapse" id="collapse">
                           <div class="card card-body">
@@ -82,7 +83,7 @@
                             <hr>
                             Grain - Straight<br>
                             <hr>
-                            Physical and Mechanical Properties: Strength class 3. It is a low to medium density timber. Air dries without extensive degrade. Works easily with machine and hand tools giving a clean but somewhat fibrous finish.<br>
+                            Physical and Mechanical Properties: Strength class 3. It is a low to medium density timber.<br>
                             <hr>
                             Weight - 30kg/m3 <br>
                             <hr>
@@ -92,11 +93,37 @@
                     </div>
                 </div>
             </div>
+            <!-- Modal -->
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+            <script>
+
+              var modal = document.getElementById('myModal');
+
+              var img = document.getElementById('myImg');
+              var modalImg = document.getElementById("img01");
+              var captionText = document.getElementById("caption");
+              img.onclick = function(){
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  captionText.innerHTML = this.alt;
+              }
+
+              var span = document.getElementsByClassName("close")[0];
+
+              span.onclick = function() {
+                  modal.style.display = "none";
+              }
+            </script>
+
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title">Crabwood</h5>
-                        <p class="card-text"><img src="../images/samples/crabwood.gif"</p>
+                        <p class="card-text"><img id="myImg1" src="../images/samples/crabwood.gif" alt="Crabwood"</p>
                         <a class="btn btn-success" data-toggle="collapse" href="#collapse2" role="button">More Details</a>
                         <div class="collapse" id="collapse2">
                           <div class="card card-body">
@@ -109,7 +136,7 @@
                             <hr>
                             Grain - generally straight but sometimes interlocked<br>
                             <hr>
-                            Physical and Mechanical Properties: Comparable in strength to European Beech. Small movement. Moderately hard with good mechanical properties and is fairly stable in use.<br>
+                            Physical and Mechanical Properties: Small movement. Moderately hard with good mechanical properties and is fairly stable in use.<br>
                             <hr>
                             Weight - 610kg/m3 (39 lb/ft3 ) seasoned <br>
                             <hr>
@@ -119,11 +146,37 @@
                     </div>
                 </div>
             </div>
+            <div id="myModal1" class="modal">
+              <span class="close1">&times;</span>
+              <img class="modal-content" id="img02">
+              <div id="caption"></div>
+            </div>
+            <script>
+
+              var modal = document.getElementById('myModal1');
+
+              var img = document.getElementById('myImg1');
+              var modalImg = document.getElementById("img02");
+              var captionText = document.getElementById("caption");
+              img.onclick = function(){
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  captionText.innerHTML = this.alt;
+              }
+
+              var span1 = document.getElementsByClassName("close1")[0];
+
+              span1.onclick = function() {
+                  modal.style.display = "none";
+              }
+            </script>
+
+
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title">Greenheart</h5>
-                        <p class="card-text"><img src="../images/samples/greenheart.gif"</p>
+                        <p class="card-text"><img id="myImg2" src="../images/samples/greenheart.gif" alt="Greenheart"</p>
                         <a class="btn btn-success" data-toggle="collapse" href="#collapse3" role="button" class="card-link">More Details</a>
                         <div class="collapse" id="collapse3">
                           <div class="card card-body">
@@ -136,21 +189,46 @@
                             <hr>
                             Grain - straight or interlocked<br>
                             <hr>
-                            Physical and Mechanical Properties:  Has exceptionally high strength properties even when its weight is taken into account.<br>
+                            Physical and Mechanical Properties: Has exceptionally high strength properties even when its weight is taken into account.<br>
                             <hr>
                             Weight - 30kg/m3 <br>
                             <hr>
-                            Uses:  A very heavy, hard timber, suitable for use under exacting conditions, outstanding in most of its strength properties and of very high durability and having excellent resistance to attack by marine borers.<br>Available in very large sizes and long lengths, and is therefore suitable for piling, piers, lock gates, docks and harbor works.
+                            Uses: Available in very large sizes and long lengths, suitable for piling, piers, lock gates, docks and harbor works.
                           </div>
                        </div>
                     </div>
                 </div>
             </div>
+            <div id="myModal2" class="modal">
+              <span class="close2">&times;</span>
+              <img class="modal-content" id="img02">
+              <div id="caption"></div>
+            </div>
+            <script>
+
+              var modal = document.getElementById('myModal2');
+
+              var img = document.getElementById('myImg2');
+              var modalImg = document.getElementById("img02");
+              var captionText = document.getElementById("caption");
+              img.onclick = function(){
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  captionText.innerHTML = this.alt;
+              }
+
+              var span2 = document.getElementsByClassName("close2")[0];
+
+              span2.onclick = function() {
+                  modal.style.display = "none";
+              }
+            </script>
+
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title">Locust</h5>
-                        <p class="card-text"><img src="../images/samples/locust.jpg"></p>
+                        <p class="card-text"><img id="myImg3" src="../images/samples/locust.jpg" alt="Locust"></p>
                         <a class="btn btn-success" data-toggle="collapse" href="#collapse4" role="button">More Details</a>
                     </div>
                     <div class="collapse" id="collapse4">
@@ -169,13 +247,38 @@
                 </div>
             </div>
         </div>
+        <div id="myModal3" class="modal">
+          <span class="close3">&times;</span>
+          <img class="modal-content" id="img03">
+          <div id="caption"></div>
+        </div>
+        <script>
+
+          var modal = document.getElementById('myModal3');
+
+          var img = document.getElementById('myImg3');
+          var modalImg = document.getElementById("img03");
+          var captionText = document.getElementById("caption");
+          img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+          }
+
+          var span3 = document.getElementsByClassName("close3")[0];
+
+          span3.onclick = function() {
+              modal.style.display = "none";
+          }
+        </script>
+
         <hr/>
         <div class="row">
           <div class="col-md-3">
               <div class="card">
                   <div class="card-body text-center">
                       <h5 class="card-title">Mora</h5>
-                      <p class="card-text"><img src="../images/samples/mora.gif"</p>
+                      <p class="card-text"><img id="myImg4" src="../images/samples/mora.gif" alt="Mora"</p>
                       <a class="btn btn-success" data-toggle="collapse" href="#collapse5" role="button">More Details</a>
                       <div class="collapse" id="collapse5">
                         <div class="card card-body">
@@ -188,7 +291,7 @@
                           <hr>
                           Grain - interlocked<br>
                           <hr>
-                          Physical and Mechanical Properties: Strength class 3. It is a low to medium density timber. Air dries without extensive degrade. Works easily with machine and hand tools giving a clean but somewhat fibrous finish.<br>
+                          Physical and Mechanical Properties: Strength class 3. It is a low to medium density timber.<br>
                           <hr>
                           Weight - 30kg/m3 <br>
                           <hr>
@@ -202,14 +305,14 @@
               <div class="card">
                   <div class="card-body text-center">
                       <h5 class="card-title">Purpleheart</h5>
-                      <p class="card-text"><img src="../images/samples/pheart.gif"</p>
+                      <p class="card-text"><img id="myImg5" src="../images/samples/pheart.gif" alt="Purpleheart"</p>
                       <a class="btn btn-success" data-toggle="collapse" href="#collapse6" role="button">More Details</a>
                       <div class="collapse" id="collapse6">
                         <div class="card card-body">
                           <b>Scientific Name:</b>
                           Peltogyne pubescens<br>
                           <hr>
-                          Wood Appearance: Dull brown when freshly cut, rapidly oxidises to violet-purple on exposure to light and gradually toning down in course to time to dark purplish brown.<br>
+                          Wood Appearance: Dull brown when freshly cut, violet-purple on exposure to light. <br>
                           <hr>
                           Texture - moderate to fine<br>
                           <hr>
@@ -219,7 +322,7 @@
                           <hr>
                           Weight - 860 kg/m3 (54 lb/ft3 ) seasoned. <br>
                           <hr>
-                          Uses: Possesses high strength and very good durability and is an excellent structural timber suitable for heavy outdoor construction work such as bridges and park benches. As flooring it has high wearing quantities and is suitable for most conditions of traffic. Has been used successfully in chemical plants as vats, filter press plates and frames. Also used for making billiard cue butt, tool handles, interior and exterior joinery and ship building. A valuable wood for its attractive appearance and its strength.<br>
+                          Uses: Possesses high strength and is an excellent structural timber suitable for heavy outdoor construction work such as bridges and park benches. Also used for making billiard cue butt, tool handles, interior and exterior joinery and ship building.<br>
                         </div>
                      </div>
                   </div>
@@ -229,7 +332,7 @@
               <div class="card">
                   <div class="card-body text-center">
                       <h5 class="card-title">Yellow Silverballi</h5>
-                      <p class="card-text"><img src="../images/samples/sballi.gif"</p>
+                      <p class="card-text"><img id="myImg6" src="../images/samples/sballi.gif" alt="Yellow Silverballi"</p>
                       <a class="btn btn-success" data-toggle="collapse" href="#collapse7" role="button">More Details</a>
                       <div class="collapse" id="collapse7">
                         <div class="card card-body">
@@ -242,9 +345,9 @@
                           <hr>
                           Grain - Straight<br>
                           <hr>
-                          Physical and Mechanical Properties: In Guyana the Silverballi group is divided into "hard and soft" with the dividing line being put at an air dry specific gravity of 37 lb/ft3. The "hard" Silverballi is rather light to heavy with densities ranging from 37-62 lb per cu. ft. "Soft" Silverballi ranges in densities from 22-37 lb per cu ft. The group is generally in strength class 2. Movement rather low, the lighter species shrink less than the heavier types.<br>
+                          Physical and Mechanical Properties: In Guyana the Silverballi group is divided into "hard and soft". The "hard" Silverballi is rather light to heavy with densities ranging from 37-62 lb per cu. ft. "Soft" Silverballi ranges in densities from 22-37 lb per cu ft.<br>
                           <hr>
-                          Uses: "Hard" Silverballi: general carpentry, boat building (planking), suitable for both interior and exterior work in house building, furniture and cabinet work, suitable for veneer and plywood. "Soft" Silverballi: general carpentry, interior work, light furniture, suitable for utility plywood.<br>
+                          Uses: "Hard" Silverballi: general carpentry, boat building (planking), suitable for both interior and exterior work in house building, furniture and cabinet work. "Soft" Silverballi: general carpentry, interior work, light furniture, suitable for utility plywood.<br>
                         </div>
                      </div>
                   </div>
@@ -254,7 +357,7 @@
               <div class="card">
                   <div class="card-body text-center">
                       <h5 class="card-title">Shibadan</h5>
-                      <p class="card-text"><img src="../images/samples/shibadan.gif"</p>
+                      <p class="card-text"><img id="myImg7" src="../images/samples/shibadan.gif" alt="Shibadan"</p>
                       <a class="btn btn-success" data-toggle="collapse" href="#collapse8" role="button">More Details</a>
                       <div class="collapse" id="collapse8">
                         <div class="card card-body">
@@ -271,7 +374,7 @@
                           <hr>
                           Weight - 850kg/m3 (53 lb/ft3 ) seasoned. <br>
                           <hr>
-                          Uses: A good general purpose wood suitable for construction work requiring strength and durability and could also be useful for exterior joinery. Also suitable for panelling, turnery and furniture manufacture.<br>
+                          Uses: A good general purpose wood suitable for construction work requiring strength and durability. Also suitable for panelling, turnery and furniture manufacture.<br>
                         </div>
                      </div>
                   </div>
@@ -284,7 +387,7 @@
                 <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title">Simarupa</h5>
-                        <p class="card-text"><img src="../images/samples/simarupa.gif"</p>
+                        <p class="card-text"><img id="myImg8" src="../images/samples/simarupa.gif" alt="Simarupa"</p>
                         <a class="btn btn-success" data-toggle="collapse" href="#collapse9" role="button">More Details</a>
                         <div class="collapse" id="collapse9">
                           <div class="card card-body">
@@ -311,7 +414,7 @@
               <div class="card">
                   <div class="card-body text-center">
                       <h5 class="card-title">Tatabu</h5>
-                      <p class="card-text"><img src="../images/samples/tabubu.gif"</p>
+                      <p class="card-text"><img id="myImg9" src="../images/samples/tabubu.gif" alt="Tatabu"</p>
                       <a class="btn btn-success" data-toggle="collapse" href="#collapse10" role="button">More Details</a>
                       <div class="collapse" id="collapse10">
                         <div class="card card-body">
@@ -328,7 +431,7 @@
                           <hr>
                           Weight - 935 kg/m3 (58 lb/ft3 ) seasoned. <br>
                           <hr>
-                          Uses: Has a decorative appearance and is of interest for turned work and as a veneer for inlays in high grade furniture. Suitable for exterior and interior joinery, turnery, panelling and tool handles. A very useful timber with many applications.<br>
+                          Uses: Has a decorative appearance and is of interest for turned work and as a veneer for inlays in high grade furniture. Suitable for exterior and interior joinery, turnery, panelling and tool handles.<br>
                         </div>
                      </div>
                   </div>
@@ -338,7 +441,7 @@
               <div class="card">
                   <div class="card-body text-center">
                       <h5 class="card-title">Tauroniro</h5>
-                      <p class="card-text"><img src="../images/samples/tauroniro.gif"</p>
+                      <p class="card-text"><img id="myImg10" src="../images/samples/tauroniro.gif" alt="Tauroniro"</p>
                       <a class="btn btn-success" data-toggle="collapse" href="#collapse11" role="button">More Details</a>
                       <div class="collapse" id="collapse11">
                         <div class="card card-body">
@@ -365,7 +468,7 @@
               <div class="card">
                   <div class="card-body text-center">
                       <h5 class="card-title">Other Projects</h5>
-                      <p class="card-text"><img src="../images/TPL-logs2.jpg"</p>
+                      <p class="card-text"><img id="myImg11" src="../images/TPL-logs2.jpg" alt="Logging"</p>
                       <a class="btn btn-success" data-toggle="collapse" href="#collapse12" role="button">More Details</a>
                       <div class="collapse" id="collapse12">
                         <div class="card card-body">
@@ -383,8 +486,8 @@
           </div>
         </div>
     </div>
-  </div>
-</div>
+    </div>
+  </main>
 <!--Footer-->
 <footer class="page-footer font-small blue pt-4 mt-4">
 

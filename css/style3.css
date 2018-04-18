@@ -5,10 +5,11 @@ nav a{
 
 header {
   background-color: #343a40;
+  border-bottom: #86c232 3px solid;
 }
 
 section{
-  background: url(../images/forest.jpg) no-repeat;
+  background: url() no-repeat;
 }
 
 footer {
@@ -39,12 +40,4 @@ div {
 
 article{
   background-color: #333;
-}
-
-div .card{
-  background-color: rgb(180, 213, 180, 1);
-}
-
-div.jumbotron{
-  background-color: rgb(160, 190, 150, 1) !important;
 }

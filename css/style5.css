@@ -1,0 +1,135 @@
+nav a{
+   font-size: 1.3em !important;
+}
+
+
+header {
+  background-color: #343a40;
+  border-bottom: rgb(180, 213, 180, 0.5) 3px solid;
+}
+
+section{
+  background: url(../images/forest.jpg) no-repeat;
+}
+
+footer {
+    color: white;
+    background-color: #343a40;
+    border-top: rgba(180, 213, 180, 0.5) 3px solid;
+}
+
+section .view {
+  background-color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+h1 {
+  font-family: 'Audiowide', cursive;
+}
+
+div {
+  font-family: 'Share', cursive;
+}
+
+article{
+  background-color: #333;
+}
+
+div .card {
+  background-color: rgba(180, 213, 180, 0.5);
+}
+
+main {
+  background-color: rgba(180, 213, 180, 0.5);
+}
+
+div .col-md-3{
+  background-color: rgba(180, 232, 180, 0.5);
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg, #myImg1, #myImg2, #myImg3, #myImg4, #myImg5, #myImg6, #myImg7, #myImg8, #myImg9, #myImg10, #myImg11 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover, #myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg6:hover, #myImg7:hover, #myImg8:hover, #myImg9:hover, #myImg10:hover, #myImg11:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close, .close1, .close2, .close3, .close4 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}

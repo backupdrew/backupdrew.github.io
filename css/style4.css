@@ -33,18 +33,23 @@ h1 {
   font-family: 'Audiowide', cursive;
 }
 
-div {
+div .card-footer{
   font-family: 'Share', cursive;
+  color: black;
+    background: url(../images/bg3.jpg) center no-repeat;
+    height: 750px;
+    width: 100%;
+    background-size: 100% 100%;
 }
 
 article{
   background-color: #333;
 }
 
-div .card{
-  background-color: rgb(180, 213, 180, 1);
+div .card-header{
+  background-color: rgb(165, 190, 165, 1) !important;
 }
 
-div.jumbotron{
-  background-color: rgb(160, 190, 150, 1) !important;
+div .card-footer, div .card-body, .card-text{
+  background-color: rgb(222, 238, 222, 1)
 }

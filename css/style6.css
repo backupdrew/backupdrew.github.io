@@ -2,13 +2,20 @@ nav a{
    font-size: 1.3em !important;
 }
 
+div p{
+  font-size: 17.5px;
+}
+
+dd {
+  text-indent: 4em;
+}
 
 header {
   background-color: #343a40;
 }
 
 section{
-  background: url(../images/forest.jpg) no-repeat;
+  background-color: rgb(165, 190, 165, 1);
 }
 
 footer {
@@ -33,18 +40,23 @@ h1 {
   font-family: 'Audiowide', cursive;
 }
 
-div {
+div .card-footer{
   font-family: 'Share', cursive;
+  color: black;
 }
 
 article{
   background-color: #333;
 }
 
-div .card{
-  background-color: rgb(180, 213, 180, 1);
+div .card-header{
+  background-color: rgb(165, 190, 165, 1) !important;
 }
 
-div.jumbotron{
-  background-color: rgb(160, 190, 150, 1) !important;
+div .card-footer, div .card-body, .card-text{
+  background-color: rgb(222, 238, 222, 1);
+}
+
+.ques {
+  font-family: cursive;
 }

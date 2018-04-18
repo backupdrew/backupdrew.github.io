@@ -38,10 +38,6 @@ div {
   font-family: 'Share', cursive;
 }
 
-nav a{
-   font-size: 1.3em !important;
-}
-
 
 header {
   background-color: #343a40;
@@ -98,4 +94,23 @@ li{
 
 ul{
   list-style: none;
+}
+
+div .card-body, div .card-header, div .card text-right, div .card text-center{
+  background-color: rgb(180, 213, 180, 1);
+}
+
+#remains {
+  background-color: rgb(216, 232, 216, 1);
+}
+
+main {
+  background-color: rgb(216, 232, 216, 1);
+}
+
+.grow:hover
+{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
 }
