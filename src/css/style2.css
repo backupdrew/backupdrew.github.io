@@ -1,0 +1,116 @@
+nav a{
+   font-size: 1.3em !important;
+}
+
+
+header {
+  background-color: #343a40;
+  border-bottom: #86c232 3px solid;
+}
+
+section{
+  background: url(../images/forest.jpg) no-repeat;
+}
+
+footer {
+    color: white;
+    background-color: #343a40;
+    border-top: #86c232 3px solid;
+}
+
+section .view {
+  background-color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+h1 {
+  font-family: 'Audiowide', cursive;
+}
+
+div {
+  font-family: 'Share', cursive;
+}
+
+
+header {
+  background-color: #343a40;
+  border-bottom: #86c232 3px solid;
+}
+
+section{
+  background: url(../images/forest.jpg) no-repeat;
+}
+
+footer {
+  color: white;
+  background-color: #343a40;
+  border-top: #86c232 3px solid;
+}
+
+.card-text{
+  text-align: center;
+}
+
+.row {
+  margin-top: 60px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.row > div[class*='col-'] {
+  display: flex;
+}
+
+.card-title{
+  margin-top: 80px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.first{
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-text{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+li{
+  margin: 30px 0px 0px 0px;
+}
+
+ul{
+  list-style: none;
+}
+
+div .card-body, div .card-header, div .card text-right, div .card text-center{
+  background-color: rgb(180, 213, 180, 1);
+}
+
+#remains {
+  background-color: rgb(216, 232, 216, 1);
+}
+
+main {
+  background-color: rgb(216, 232, 216, 1);
+}
+
+.grow:hover
+{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}

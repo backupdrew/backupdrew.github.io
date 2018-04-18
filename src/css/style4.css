@@ -1,0 +1,55 @@
+nav a{
+   font-size: 1.3em !important;
+}
+
+
+header {
+  background-color: #343a40;
+}
+
+section{
+  background: url(../images/forest.jpg) no-repeat;
+}
+
+footer {
+    color: white;
+    background-color: #343a40;
+    border-top: #86c232 3px solid;
+}
+
+section .view {
+  background-color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+h1 {
+  font-family: 'Audiowide', cursive;
+}
+
+div .card-footer{
+  font-family: 'Share', cursive;
+  color: black;
+    background: url(../images/bg3.jpg) center no-repeat;
+    height: 750px;
+    width: 100%;
+    background-size: 100% 100%;
+}
+
+article{
+  background-color: #333;
+}
+
+div .card-header{
+  background-color: rgb(165, 190, 165, 1) !important;
+}
+
+div .card-footer, div .card-body, .card-text{
+  background-color: rgb(222, 238, 222, 1)
+}
